@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "mozjpeg"
-  spec.version = "3.3.1"
+  spec.version = "3.3.2"
   spec.license = { :type => "BSD" }
   spec.homepage = "https://github.com/mozilla/mozjpeg"
   spec.summary = "Improved JPEG encoder."
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/mozilla/mozjpeg.git", :tag => "v#{spec.version}" }
   spec.module_name = "mozjpeg"
   spec.header_dir = "mozjpeg"
-  spec.platforms = { :ios => "8.0" }
+  spec.platforms = { :osx => "10.15" }
   spec.prepare_command = <<-CMD
     cat << EOF > jconfig.h
     #define JPEG_LIB_VERSION  80	/* Version 6b */
